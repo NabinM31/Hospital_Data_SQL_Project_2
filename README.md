@@ -15,21 +15,62 @@ Solve business-related SQL problems for data analysis.
 
 Improve query optimization and performance.
 
-##🏥 Dataset: Hospital Data
+## 🏥 Dataset: Hospital Data
 
 This dataset contains hospital-related information, including:
 
-Hospital Name
-Location
-Departments
-Number of Doctors
-Number of Patients
-Admission & Discharge Dates
+Hospital Name,
+
+Location,
+
+Departments,
+
+Number of Doctors,
+
+Number of Patients,
+
+Admission & Discharge Dates,
+
 Medical Expenses
 
-##📖 Table of Contents
+## 📖 Table of Contents
 
  1.Queries Included
-2.Setup Instructions
-3.Usage
-4.License
+ 
+ 2.Setup Instructions
+ 
+ 3.Usage
+ 
+ 4.License
+
+
+ ## 📝 Queries Included
+
+🔹 Total Patients Count in each hospital
+
+🔹 Top 3 Hospital Departments with the highest patient count
+
+🔹 Hospital with the Highest Medical Expenses
+
+🔹 Average Stay Duration per Department
+
+🔹 Monthly Medical Expenses Analysis
+
+🔹 Longest Patient Stay Calculation
+
+🔹 Total Patients per City
+
+
+## 🚀 Usage
+
+ 1. Modify and test the queries in your preferred SQL environment.
+
+ 2. Extend the dataset by adding more hospital records.
+
+ 3. Optimize queries for better performance.
+
+##  📜 License
+
+This project is licensed under the MIT License – feel free to use and modify it.
+
+📌 Star this repo ⭐ and follow for more SQL projects!
