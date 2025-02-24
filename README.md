@@ -1,11 +1,11 @@
-# Hospital_Data_Analysis 
+###  Hospital_Data_Analysis 
 
 
 <p align="center">
   <img src="logo.png" width="200" alt="Project Logo">
 </p>
 
-##🎯 Objectives
+## 🎯 Objectives
 
 Practice SQL queries with real-world datasets.
 
@@ -17,21 +17,21 @@ Improve query optimization and performance.
 
 ## 🏥 Dataset: Hospital Data
 
-This dataset contains hospital-related information, including:
+📂 Dataset Features:
 
-Hospital Name,
+🏥 Hospital Name
 
-Location,
+📍 Location
 
-Departments,
+🏨 Departments
 
-Number of Doctors,
+👨‍⚕️ Number of Doctors
 
-Number of Patients,
+👩‍⚕️ Number of Patients
 
-Admission & Discharge Dates,
+🏥 Admission & Discharge Dates
 
-Medical Expenses
+💰 Medical Expenses
 
 ## 📖 Table of Contents
 
