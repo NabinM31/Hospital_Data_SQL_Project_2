@@ -46,28 +46,32 @@ Improve query optimization and performance.
 
  ## 📝 Queries Included
 
-🔹 Total Patients Count in each hospital
+📌 Key SQL Queries Covered:
 
-🔹 Top 3 Hospital Departments with the highest patient count
+📊 Total Patients Count in each hospital
 
-🔹 Hospital with the Highest Medical Expenses
+🏥 Top 3 Hospital Departments with the highest patient count
 
-🔹 Average Stay Duration per Department
+💸 Hospital with the Highest Medical Expenses
 
-🔹 Monthly Medical Expenses Analysis
+📅 Average Stay Duration per Department
 
-🔹 Longest Patient Stay Calculation
+📆 Monthly Medical Expenses Analysis
 
-🔹 Total Patients per City
+🛏️ Longest Patient Stay Calculation
+
+🌍 Total Patients per City
 
 
 ## 🚀 Usage
 
- 1. Modify and test the queries in your preferred SQL environment.
+💡 Modify and test the queries in your preferred SQL environment.
 
- 2. Extend the dataset by adding more hospital records.
+📊 Extend the dataset by adding more hospital records.
 
- 3. Optimize queries for better performance.
+⚡ Optimize queries for better performance.
+
+
 
 ##  📜 License
 
