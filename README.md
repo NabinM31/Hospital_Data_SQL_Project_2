@@ -33,16 +33,7 @@ Improve query optimization and performance.
 
 💰 Medical Expenses
 
-## 📖 Table of Contents
-
- 1.Queries Included
- 
- 2.Setup Instructions
- 
- 3.Usage
- 
- 4.License
-
+----
 
  ## 📝 Queries Included
 
@@ -62,19 +53,117 @@ Improve query optimization and performance.
 
 🌍 Total Patients per City
 
+----
+## 🏛 Database Schema
+```sql
+    CREATE TABLE Hospital_Data (
+    hospital_name VARCHAR(255),
+    location VARCHAR(100),
+    department VARCHAR(100),
+    doctors_count INT,
+    patients_count INT,
+    admission_date DATE,
+    discharge_date DATE,
+    medical_expenses DECIMAL(10,2)
+);
+```
+---------------------------------
+## Business Problems And Aanlysis:
+-----------------------------------
+1. Write an SQL query to find the total number of patients across all hospitals.
+```sql
+SELECT hospital_name,
+       SUM(patients_count) AS total_patients 
+FROM Hospital_Data
+GROUP BY hospital_name;
+```
+----
+2. Retrieve the average count of doctors available in each hospital.
+```sql
+SELECT hospital_name,
+       AVG(doctors_count) AS average_doctors
+FROM Hospital_Data
+GROUP BY hospital_name;
+```
+-----
 
-## 🚀 Usage
+3. Find the top 3 hospital departments that have the highest number of patients.
+```sql
+SELECT department,
+       patients_count 
+FROM hospital_data
+ORDER BY patients_count DESC
+LIMIT 3;
+```
+----
+4. Identify the hospital that recorded the highest medical expenses.
+```sql
+SELECT hospital_name,
+       medical_expenses
+FROM hospital_data
+ORDER BY medical_expenses DESC
+LIMIT 1;
+```
+----
 
-💡 Modify and test the queries in your preferred SQL environment.
+5. Calculate the average medical expenses per day for each hospital
+```sql
+SELECT hospital_name, 
+       AVG(medical_expenses / (COALESCE(NULLIF(discharge_date - admission_date, 0), 1))) AS avg_expenses_per_day
+FROM Hospital_Data
+GROUP BY hospital_name;
+```
+----
 
-📊 Extend the dataset by adding more hospital records.
+6. Find the patient with the longest stay by calculating the difference between Discharge Date and Admission Date.
+```sql
+SELECT hospital_name,
+       patients_count ,
+       (discharge_date - admission_date) AS Longest_stay
+FROM hospital_data
+ORDER BY Longest_stay DESC
+LIMIT 1;
+```
+----
 
-⚡ Optimize queries for better performance.
+7.Count the total number of patients treated in each city.
+```sql
+SELECT  location,
+        SUM(patients_count)AS total_patients
+FROM hospital_data
+GROUP BY location;
+```
+----
+
+8.Calculate the average number of days patients spend in each department.
+```sql
+SELECT department,
+       AVG(discharge_date - admission_date)AS Avg_spend_Days
+FROM hospital_data
+GROUP BY department;
+```
+----
+
+9.Find the department with the least number of patients.
+```sql
+SELECT department,patients_count
+FROM hospital_data
+GROUP BY department,patients_count
+ORDER BY patients_count ASC
+LIMIT 1;
+```
+
+-----
+
+10.Group the data by month and calculate the total medical expenses for each month.
+```sql
+SELECT 
+    DATE_TRUNC('month', admission_date) AS month,
+    SUM(medical_expenses) AS total_medical_expenses
+FROM Hospital_Data
+GROUP BY month
+ORDER BY month;
+```
 
 
 
-##  📜 License
-
-This project is licensed under the MIT License – feel free to use and modify it.
-
-📌 Star this repo ⭐ and follow for more SQL projects!
