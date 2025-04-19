@@ -1,9 +1,16 @@
 # Hospital_Data_Analysis 
-
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/3063/3063823.png" width="120" alt="Hospital Logo">
+</p>
 
 <p align="center">
-  <img src="logo.png" width="200" alt="Project Logo">
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square&logo=postgresql&logoColor=white" alt="Project Status">
+  <img src="https://img.shields.io/badge/Built%20With-PostgreSQL-blue?style=flat-square&logo=postgresql" alt="PostgreSQL Badge">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License Badge">
 </p>
+
+
+
 
 ## 🎯 Objectives
 
